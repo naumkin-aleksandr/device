@@ -1,0 +1,12 @@
+/* Fonts:
+   https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
+   ========================================================================== */
+
+@import "mixins";
+
+
+@font-face {
+  font-family: 'Roboto' ;
+  src: url('../fonts/robot.woff');
+  src: url('../fonts/robot.woff2');
+}
