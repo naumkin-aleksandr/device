@@ -1,0 +1,118 @@
+.services {
+  margin-bottom: 90px;
+  background: #e5e5e5;
+  border-top: 100px solid #fff;
+  &__wrapper {
+    width: 1200px;
+    height: 288px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 7px;
+      height: 320px;
+      background: #000;
+      position: absolute;
+      top: -100px;
+      left: 297px;
+    }
+  }
+  &__wrap-btn {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+  }
+  &__btn {
+    width: 160px;
+    margin-bottom: 24px;
+    display: inline-block;
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 3.6px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: $t-black;
+    border: none;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0) 16px,
+      #f0c52e 16px 24px,
+      rgba(0, 0, 0, 0) 24px
+    );
+    cursor: pointer;
+    &:not(.services__btn_selected) {
+      &:hover {
+        background: #f0c52e;
+        transition: 0.2s;
+      }
+    }
+
+    &_selected {
+      width: 277px;
+      padding-right: 117px;
+      color: $c-yellow;
+      background: #000;
+    }
+  }
+  &__box {
+    margin-left: 400px;
+    position: relative;
+    &-delivery {
+      &::before {
+        content: "";
+        width: 136px;
+        height: 164px;
+        background: url(/img/delivery-img.png) no-repeat center;
+        position: absolute;
+        top: -15px;
+        right: 80px;
+      }
+    }
+    &-guarantee {
+      &::before {
+        content: "";
+        width: 171px;
+        height: 194px;
+        background: url(/img/warranty-img.png) no-repeat center;
+        position: absolute;
+        top: -40px;
+        right: 80px;
+      }
+    }
+    &-credit {
+      &::before {
+        content: "";
+        width: 156px;
+        height: 186px;
+        background: url(/img/credit-img.png) no-repeat center;
+        position: absolute;
+        top: -40px;
+        right: 80px;
+      }
+    }
+  }
+  &__title {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 47px;
+    letter-spacing: 0.47px;
+    position: absolute;
+    top: -27px;
+    left: 0;
+  }
+
+  &__text {
+    width: 460px;
+    padding-top: 60px;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    color: $t-grey;
+  }
+}

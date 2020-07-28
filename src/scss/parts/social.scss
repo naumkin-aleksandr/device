@@ -1,0 +1,28 @@
+.social {
+    display: flex;
+    &__link {
+        margin-right: 25px;
+        width: 32px;
+        height: 32px;
+        background: #7e7e7e;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            background: #b5b5b5;
+            transition: .2s;
+        }
+        &:active {
+            background: #595959;
+        }
+    }
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: $c-black-light;
+    }
+}

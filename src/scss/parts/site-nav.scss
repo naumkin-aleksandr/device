@@ -1,0 +1,22 @@
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    &__link {
+        font-family: 'Gilroy';
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 3.6px;
+        text-transform: uppercase;
+        color: $t-black;
+        &_white {
+            color: #fff;
+        }
+        &:hover {
+            opacity: .6;
+            transition: .2s;
+        }
+        &:active {
+            opacity: .3;
+        }
+    }
+}

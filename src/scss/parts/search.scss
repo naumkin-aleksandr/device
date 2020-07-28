@@ -1,0 +1,67 @@
+.search {
+    width: 540px;
+    position: relative;
+    &__input {
+        width: 355px;
+        padding-left: 40px;
+        padding-right: 10px;
+        background: none;
+        font-family: 'Open Sans';
+        font-weight: 300;
+        font-size: 15px;
+        letter-spacing: .15px;
+        @include placeholder {
+            opacity: .3;
+        }
+        &:hover {
+            transition: .2s;
+            @include placeholder {
+                opacity: .6;
+            }
+        }
+        &:focus + .search__btn {
+            opacity: 1;
+        }
+    }
+    &__btn {
+        opacity: 0;
+        width: 85px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 45px;
+        letter-spacing: .15px;
+        color: $t-black;
+        border: 2px solid #000;
+        background: none;
+        cursor: pointer;
+        position: absolute;
+        top: -12px;
+        left: 355px;
+        &::before {
+            content: "";
+            width: 355px;
+            height: 2px;
+            background: #000;
+            position: absolute;
+            bottom: -2px;
+            right: 83px;
+        }
+        &:hover {
+            color: #fff;
+            background: #000;
+            transition: .2s;
+        }
+        &:active {
+            color: rgba(255, 255, 255, .3);
+        }
+    }
+    &__icon {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+    }
+
+}

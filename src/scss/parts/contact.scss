@@ -1,0 +1,46 @@
+.contact {
+    width: 560px;    
+    padding: 50px 0 80px 0;
+    position: relative;
+    &::before {
+        content: '';
+        width: 80px;
+        height: 7px;
+        background: #000;
+        position: absolute;
+        top: 0;
+        left: 0; 
+    }
+    &__title {
+        margin-bottom: 40px;
+        font-family: 'Gilroy';
+        font-weight: 800;
+        font-size: 47px;
+        line-height: 47px;
+        letter-spacing: .47px;
+    }
+    &__text {
+        margin-bottom: 30px;
+        font-family: 'Open Sans';
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 30px;
+        color: $t-grey;
+    }
+    &__map_small {
+        width: 560px;
+        height: 220px;
+        margin-bottom: 70px;
+    }
+    &__map_big {
+        width: 960px;
+        height: 560px;
+        position: absolute;
+        top: 30px;
+        left: -500px;
+    }
+    &__btn {
+        width: 260px;
+    }
+
+}

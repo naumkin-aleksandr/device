@@ -1,0 +1,19 @@
+.partners-logo {
+  width: 1200px;
+  margin: 0 auto 90px;
+  padding: 0 20px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    filter: grayscale(100%);
+    opacity: 0.2;
+    &:hover {
+      filter: grayscale(0);
+      opacity: 1;
+      transition: 0.2s;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.copy {
+    &__link {
+        display: inline-block;
+        width: 27px;
+        height: 35px;
+        background: url(/img/logo-html.png) no-repeat center;
+        &:hover {
+            opacity: .6;
+            transition: .2s;
+        }
+        &:active {
+            opacity: .3;
+        }
+    }
+}

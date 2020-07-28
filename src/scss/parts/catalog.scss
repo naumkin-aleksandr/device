@@ -1,0 +1,62 @@
+.catalog {
+    position: relative;
+    &__btn {
+        padding-right: 32px;
+        font-family: 'Gilroy';
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 3.6px;
+        text-transform: uppercase;
+        background: none;
+        cursor: pointer;
+        position: relative;
+        &::before {
+            content: "\2716";
+            transform: rotate(45deg);
+            opacity: .3;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &:hover {
+            opacity: .6;
+            transition: .2s;
+        }
+        &:active {
+            opacity: .3;
+        }
+    }
+    &__list {
+        width: 1160px;
+        padding: 0 60px 25px 60px;
+        display: flex;
+        background-color: $c-yellow;
+        position: absolute;
+        top: 52px;
+        left: -60px;
+    }
+    &__item {
+        margin-right: 60px;
+        display: flex;
+        flex-flow: column;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        margin-bottom: 15px;
+        font-family: 'Open Sans';
+        font-weight: 300;
+        font-size: 15px;
+        letter-spacing: .15px;
+        color: $t-black;
+        &:hover {
+            opacity: .6;
+            transition: .2s;
+        }
+        &:active {
+            opacity: .3;
+        }
+    }
+
+}

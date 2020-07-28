@@ -1,0 +1,61 @@
+body {
+  color: $t-black;
+}
+
+.wrapper-flex {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+}
+
+.none {
+  display: none;
+}
+
+.logo {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0.48px;
+  color: $t-black;
+  text-transform: uppercase;
+  &_yellow {
+    color: $c-yellow-bright;
+  }
+  &:hover {
+    opacity: 0.6;
+    transition: 0.2s;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.btn {
+  display: inline-block;
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: $t-black;
+  border: none;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0) 16px,
+    #f0c52e 16px 24px,
+    rgba(0, 0, 0, 0) 24px
+  );
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background: #f0c52e;
+    transition: 0.2s;
+  }
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
