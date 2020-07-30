@@ -1,0 +1,51 @@
+.pagination {
+    margin: 0 20px 70px;
+    display: flex;
+    justify-content: space-between;
+    background: $c-grey;
+    &__link {
+        padding: 0 30px;
+        font-family: 'Gilroy';
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 70px;
+        letter-spacing: 3.2px;
+        text-transform: uppercase;
+        color: $t-black;
+        &:hover {
+            background: #d9d9d9;
+            transition: .2s;
+        }
+        &:active {
+            color: rgba(0,0,0, .3) ;
+        }
+
+        &-number {
+            margin-right: 20px;
+            padding: 5px;
+            font-family: 'Gilroy';
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 70px;
+            letter-spacing: 3.2px;
+            text-transform: uppercase;
+            color: $t-black;
+            opacity: .3;
+            &:last-child {
+                margin-right: 0;
+            }
+            &_selected {
+                opacity: 1;
+            }
+            &:not(.pagination__link-number_selected) {
+                &:hover {
+                    opacity: .6;
+                    transition: .2s;
+                }
+                &:active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

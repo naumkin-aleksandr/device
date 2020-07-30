@@ -11,7 +11,7 @@
 @import 'parts/header.scss';
 @import 'parts/search.scss';
 @import 'parts/user-nav.scss';
-@import 'parts/catalog.scss';
+@import 'parts/catalog-product.scss';
 @import 'parts/site-nav.scss';
 @import 'parts/slide.scss';
 @import 'parts/popular-product.scss';
@@ -22,6 +22,13 @@
 @import 'parts/footer.scss';
 @import 'parts/social.scss';
 @import 'parts/copy.scss';
+@import 'parts/catalog.scss';
+@import 'parts/breadcrumbs.scss';
+@import 'parts/filter.scss';
+@import 'parts/sorting.scss';
+@import 'parts/pagination.scss';
+@import 'parts/product.scss';
+@import 'parts/window-message.scss';
 
 
 @import 'parts/common-styles.scss';

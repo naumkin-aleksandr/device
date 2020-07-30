@@ -59,3 +59,42 @@ body {
     color: rgba(0, 0, 0, 0.3);
   }
 }
+
+.btn-close {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background: $c-yellow-bright;
+  border-radius: 50%;
+  opacity: .5;
+  cursor: pointer;
+  position: relative;
+  &::before {
+    content: '\2573';
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50% );
+    left: 50%;
+  }
+  &:hover {
+    opacity: 1;
+    transition: .2s;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+@keyframes btnCatalogProductClose {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    color: red;
+    opacity: 1;
+    top: -2px;
+  }
+}

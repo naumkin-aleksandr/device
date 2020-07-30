@@ -1,0 +1,82 @@
+.sorting {
+  width: 800px;
+  margin-bottom: 70px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  &__title {
+    margin-right: 50px;
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 70px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+  }
+  &__btn {
+    margin-right: 30px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 14px;
+    color: $t-black;
+    background: none;
+    opacity: 0.3;
+    cursor: pointer;
+    &:last-of-type {
+      margin-right: auto;
+    }
+    &_selected {
+      opacity: 1;
+    }
+    &:not(.sorting__btn_selected) {
+      &:hover {
+        opacity: 0.6;
+        transition: 0.2s;
+      }
+      &:active {
+        opacity: 1;
+      }
+    }
+
+    &-arrow {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      background: none;
+      opacity: 0.2;
+      cursor: pointer;
+      position: relative;
+      &:last-child {
+        margin-right: 0;
+      }
+      &_selected {
+        opacity: 1;
+      }
+      &:not(.sorting__btn-arrow_selected) {
+        &:hover {
+          opacity: 0.4;
+          transition: 0.2s;
+        }
+        &:active {
+          opacity: 1;
+        }
+      }
+      &_up {
+        &::before {
+          content: "\25b2";
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      &_down {
+        &::before {
+          content: "\25bc";
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}

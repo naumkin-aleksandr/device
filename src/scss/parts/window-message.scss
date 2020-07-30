@@ -1,0 +1,51 @@
+.window-message {
+  &__wrapper {
+    width: 960px;
+    padding: 80px 100px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  &__btn-wrap {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+  }
+  &__wrap-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box {
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: column;
+  }
+  &__label {
+    margin-bottom: 10px;
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 18px;
+  }
+  &__input {
+    width: 360px;
+    padding-left: 20px;
+    background: #f2f2f2;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 50px;
+  }
+  &__textarea {
+    height: 155px;
+    padding: 10px 20px;
+    background: #f2f2f2;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__btn {
+    width: 200px;
+  }
+}

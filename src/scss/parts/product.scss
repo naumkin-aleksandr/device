@@ -1,0 +1,98 @@
+.product {
+  width: 800px;
+  display: flex;
+  flex-flow: wrap;
+  &__item {
+    margin: 0 20px 30px;
+  }
+  &__box-img {
+    margin-bottom: 20px;
+    position: relative;
+    &-new {
+        &:hover::before {
+            opacity: .1;
+            transition: .2s;
+        }
+        &::before {
+            content: 'new';
+            display: block;
+            width: 60px;
+            height: 60px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            font-family: 'Gilroy';
+            font-weight: 800;
+            font-size: 14px;
+            letter-spacing: .7px;
+            line-height: 60px;
+            text-transform: uppercase;
+            text-align: center;
+            opacity: .2;
+            position: absolute;
+            top: 25px;
+            right: 25px;
+        }
+    }
+
+    &:hover {
+        .product__img {
+            opacity: .4;
+            transition: .2s;
+        }
+    }
+    &:hover .product__box-hidden {
+        visibility: visible;
+        transition: .2s;
+    }
+
+  }
+  &__box-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+    width: 260px;
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+  }
+  &__price {
+    margin-left: 15px;
+    font-family: "Gilroy";
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    color: $t-grey;
+  }
+  &__box-hidden {
+      visibility: hidden;
+      display: flex;
+      flex-flow: column;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__btn {
+      width: 200px;
+      margin-bottom: 20px;
+      &-comparison {
+          font-family: 'Open Sans';
+          font-weight: 300;
+          font-size: 13px;
+          letter-spacing: .13px;
+          background: none;
+          opacity: .5;
+          cursor: pointer;
+          &:hover {
+              opacity: 1;
+              transition: .2s;
+          }
+          &:active {
+              opacity: .2;
+          }
+      }
+  }
+}
