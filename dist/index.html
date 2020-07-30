@@ -7,16 +7,497 @@
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="stylesheet" href="css/style.bundle.css" />
 
-    <title>Заголовок | Проект</title>
+    <title>device</title>
   </head>
+
   <body>
-    <header>
-      <img src="favicon/favicon.ico" alt="" />
+    <svg class="none">
+      <symbol id="icon-search" viewBox="0 0 512.005 512.005">
+        <g>
+          <path
+            d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
+        S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
+        c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
+         M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"
+          />
+        </g>
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 512 512">
+        <g>
+          <path
+            d="M255.999,0c-74.443,0-135,60.557-135,135s60.557,135,135,135s135-60.557,135-135S330.442,0,255.999,0z"
+          />
+          <path
+            d="M478.48,398.68C438.124,338.138,370.579,302,297.835,302h-83.672c-72.744,0-140.288,36.138-180.644,96.68l-2.52,3.779V512
+        h450h0.001V402.459L478.48,398.68z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="icon-compare" viewBox="0 0 121.805 121.805">
+        <g>
+          <path
+            d="M121.805,109.623V21.926c0-2.692-2.181-4.873-4.871-4.873H92.572c-2.691,0-4.871,2.181-4.871,4.873v87.697
+        c0,2.693,2.18,4.873,4.871,4.873h24.361C119.624,114.496,121.805,112.316,121.805,109.623z"
+          />
+          <path
+            d="M46.287,114.496h26.797c2.691,0,4.872-2.18,4.872-4.873V12.181c0-2.692-2.181-4.872-4.872-4.872H46.287
+        c-2.692,0-4.873,2.18-4.873,4.872v97.442C41.414,112.316,43.594,114.496,46.287,114.496z"
+          />
+          <path
+            d="M4.872,46.286C2.18,46.286,0,48.466,0,51.158v58.465c0,2.693,2.18,4.873,4.872,4.873h24.361
+        c2.692,0,4.872-2.18,4.872-4.873V51.158c0-2.692-2.18-4.872-4.872-4.872H4.872z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="icon-basket" viewBox="0 0 512 512">
+        <g>
+          <path
+            d="m497 181h-52.791l-115.496-144.37c-5.174-6.467-14.613-7.518-21.083-2.342-6.469 5.175-7.518 14.614-2.342 21.083l100.503 125.629h-299.582l100.504-125.629c5.175-6.469 4.126-15.909-2.342-21.083-6.47-5.176-15.909-4.126-21.083 2.342l-115.497 144.37h-52.791c-8.284 0-15 6.716-15 15v30c0 8.284 6.716 15 15 15h482c8.284 0 15-6.716 15-15v-30c0-8.284-6.716-15-15-15z"
+          />
+          <path
+            d="m90.577 470.121c1.84 6.44 7.726 10.879 14.423 10.879h302c6.697 0 12.583-4.439 14.423-10.879l56.891-199.121h-444.628zm234.127-66.586 15-90c1.362-8.172 9.09-13.696 17.262-12.33 8.172 1.362 13.692 9.09 12.33 17.262l-15 90c-1.223 7.337-7.578 12.537-14.778 12.537-.819 0-1.649-.067-2.484-.207-8.172-1.362-13.692-9.091-12.33-17.262zm-83.704-87.535c0-8.284 6.716-15 15-15s15 6.716 15 15v90c0 8.284-6.716 15-15 15s-15-6.716-15-15zm-84.966-14.795c8.173-1.361 15.9 4.158 17.262 12.33l15 90c1.362 8.171-4.158 15.9-12.33 17.262-.834.139-1.665.207-2.484.207-7.201 0-13.555-5.199-14.778-12.537l-15-90c-1.362-8.172 4.158-15.901 12.33-17.262z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="icon-facebook" viewBox="0 0 24 24">
+        <g>
+          <path
+            d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="icon-instagram" viewBox="0 0 97.395 97.395">
+        <g>
+          <path
+            d="M12.501,0h72.393c6.875,0,12.5,5.09,12.5,12.5v72.395c0,7.41-5.625,12.5-12.5,12.5H12.501C5.624,97.395,0,92.305,0,84.895
+        V12.5C0,5.09,5.624,0,12.501,0L12.501,0z M70.948,10.821c-2.412,0-4.383,1.972-4.383,4.385v10.495c0,2.412,1.971,4.385,4.383,4.385
+        h11.008c2.412,0,4.385-1.973,4.385-4.385V15.206c0-2.413-1.973-4.385-4.385-4.385H70.948L70.948,10.821z M86.387,41.188h-8.572
+        c0.811,2.648,1.25,5.453,1.25,8.355c0,16.2-13.556,29.332-30.275,29.332c-16.718,0-30.272-13.132-30.272-29.332
+        c0-2.904,0.438-5.708,1.25-8.355h-8.945v41.141c0,2.129,1.742,3.872,3.872,3.872h67.822c2.13,0,3.872-1.742,3.872-3.872V41.188
+        H86.387z M48.789,29.533c-10.802,0-19.56,8.485-19.56,18.953c0,10.468,8.758,18.953,19.56,18.953
+        c10.803,0,19.562-8.485,19.562-18.953C68.351,38.018,59.593,29.533,48.789,29.533z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="icon-twitter" viewBox="0 0 24 24">
+        <g>
+          <path
+            d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"
+          />
+        </g>
+      </symbol>
+    </svg>
+
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="header__logo logo" href="index.html">device</a>
+
+        <div class="header__wrap">
+          <div class="header__search search">
+            <input class="search__input" type="search" placeholder="Поиск по сайту" />
+            <button class="search__btn" type="button">Найти</button>
+            <svg class="search__icon">
+              <use href="#icon-search"></use>
+            </svg>
+          </div>
+          <ul class="header__user-nav user-nav">
+            <li class="user-nav__item user-nav__item_big-indent">
+              <a class="user-nav__link" href="#">Войти</a>
+              <svg class="user-nav__icon">
+                <use href="#icon-user"></use>
+              </svg>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">Сравнить</a>
+              <svg class="user-nav__icon">
+                <use href="#icon-compare"></use>
+              </svg>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">Корзина</a>
+              <svg class="user-nav__icon">
+                <use href="#icon-basket"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <!---/header__wrap-->
+
+        <div class="header__wrap " id="header-wrap-bottom">
+          <div class="header__catalog-product catalog-product">
+            <button class="catalog-product__btn " id="catalog-product-btn" type="button">Каталок товаров</button>
+            <ul class="catalog-product__list none" id="catalog-product-list">
+              <li class="catalog-product__item">
+                <a class="catalog-product__link" href="#">Виртуальная реальность</a>
+                <a class="catalog-product__link" href="catalog.html">Моноподы для селфи</a>
+                <a class="catalog-product__link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="catalog-product__item">
+                <a class="catalog-product__link" href="#">Фитнес-браслеты</a>
+                <a class="catalog-product__link" href="#">Умный часы</a>
+              </li>
+              <li class="catalog-product__item">
+                <a class="catalog-product__link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
+          <!--/header__catalog-product-->
+
+          <div class="header__site-nav site-nav">
+            <a class="site-nav__link" href="#">Доставка</a>
+            <a class="site-nav__link" href="#">Гарантия</a>
+            <a class="site-nav__link" href="#">Контакты</a>
+          </div>
+        </div>
+        <!---/header__wrap-->
+      </div>
+      <!-- /.header__wrapper -->
     </header>
 
-    <div class="container">Первая страница.</div>
+    <section class="slide">
+      <div class="slide__wrap-btn">
+        <button class="slide__btn-switch slide__btn-switch_selected" id="slide-btn-1" type="button"></button>
+        <button class="slide__btn-switch" id="slide-btn-2" type="button"></button>
+        <button class="slide__btn-switch" id="slide-btn-3" type="button"></button>
+      </div>
+      <!-- /slide__wrap-btn -->
 
-    <footer>Harrix</footer>
+      <div class="slide__box " id="slide-box-1">
+        <img class="slide__img slide__img-1" src="img/slider-1.png" alt="Селфи палка" />
+        <h2 class="slide__title">
+          Делай селфи,<br />
+          как Бен Стиллер!
+        </h2>
+        <span class="slide__number">01</span>
+        <p class="slide__text">
+          Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5
+          килограмм.
+        </p>
+        <a class="slide__btn btn" href="#">Подробнее</a>
+        <ul class="slide__description slide-description">
+          <li class="slide-description__item">
+            <p class="slide-description__text">8,5 м</p>
+            <p class="slide-description__text-small">Длина палки</p>
+          </li>
+          <li class="slide-description__item">
+            <p class="slide-description__text">5 кг</p>
+            <p class="slide-description__text-small">Вес палки</p>
+          </li>
+          <li class="slide-description__item">
+            <p class="slide-description__text">Карбон</p>
+            <p class="slide-description__text-small">Материал</p>
+          </li>
+        </ul>
+      </div>
+      <!-- /.slide__box -->
+
+      <div class="slide__box none" id="slide-box-2">
+        <img class="slide__img slide__img-2" src="img/slider-2.png" alt="Фитнес-браслет" />
+        <h2 class="slide__title">
+          Худеем<br />
+          правильно!
+        </h2>
+        <span class="slide__number">02</span>
+        <p class="slide__text">
+          Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+        </p>
+        <a class="slide__btn btn" href="#">Подробнее</a>
+        <ul class="slide__description slide-description">
+          <li class="slide-description__item">
+            <p class="slide-description__text">48 часов</p>
+            <p class="slide-description__text-small">Без подзарядки</p>
+          </li>
+        </ul>
+      </div>
+      <!-- /.slide__box -->
+
+      <div class="slide__box none" id="slide-box-3">
+        <img class="slide__img slide__img-3" src="img/slider-3.png" alt="Квадрокоптер" />
+        <h2 class="slide__title">Порхает как бабачка, жалит как пчела!</h2>
+        <span class="slide__number">03</span>
+        <p class="slide__text">
+          Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+        </p>
+        <a class="slide__btn btn" href="#">Подробнее</a>
+        <ul class="slide__description slide-description">
+          <li class="slide-description__item">
+            <p class="slide-description__text">800 м</p>
+            <p class="slide-description__text-small">Дальность полета</p>
+          </li>
+          <li class="slide-description__item">
+            <p class="slide-description__text">50 м</p>
+            <p class="slide-description__text-small">Радиус поражения</p>
+          </li>
+        </ul>
+      </div>
+      <!-- /.slide__box -->
+    </section>
+    <!--/slide-->
+
+    <section class="popular-product">
+      <ul class="popular-product__list">
+        <li class="popular-product__item">
+          <a class="popular-product__link" href="#">
+            <div class="popular-product__wrap-img">
+              <img class="popular-product__img" src="img/popular-1.png" alt="" />
+            </div>
+            <p class="popular-product__text">Виртуальная реальность</p>
+          </a>
+        </li>
+        <li class="popular-product__item">
+          <a class="popular-product__link" href="catalog.html">
+            <div class="popular-product__wrap-img">
+              <img class="popular-product__img" src="img/popular-2.png" alt="" />
+            </div>
+            <p class="popular-product__text">Моноподы для селфи</p>
+          </a>
+        </li>
+        <li class="popular-product__item">
+          <a class="popular-product__link" href="#">
+            <div class="popular-product__wrap-img">
+              <img class="popular-product__img" src="img/popular-3.png" alt="" />
+            </div>
+            <p class="popular-product__text">Экшн-камеры</p>
+          </a>
+        </li>
+        <li class="popular-product__item">
+          <a class="popular-product__link" href="#">
+            <div class="popular-product__wrap-img">
+              <img class="popular-product__img" src="img/popular-4.png" alt="" />
+            </div>
+            <p class="popular-product__text">Фитнес-браслеты</p>
+          </a>
+        </li>
+        <li class="popular-product__item">
+          <a class="popular-product__link" href="#">
+            <div class="popular-product__wrap-img">
+              <img class="popular-product__img" src="img/popular-5.png" alt="" />
+            </div>
+            <p class="popular-product__text">Умные часы</p>
+          </a>
+        </li>
+        <li class="popular-product__item">
+          <a class="popular-product__link" href="#">
+            <div class="popular-product__wrap-img">
+              <img class="popular-product__img" src="img/popular-6.png" alt="" />
+            </div>
+            <p class="popular-product__text">Квадрокоптеры</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!--/popular-product-->
+
+    <section class="services">
+      <div class="services__wrapper">
+        <div class="services__wrap-btn">
+          <button class="services__btn services__btn_selected" id="services-btn-delivery" type="button">
+            Доставка
+          </button>
+          <button class="services__btn" id="services-btn-guarantee" type="button">Гарантия</button>
+          <button class="services__btn" id="services-btn-credit" type="button">Кредит</button>
+        </div>
+        <div class="services__box services__box-delivery " id="services-box-delivery">
+          <h3 class="services__title">Доставка</h3>
+          <p class="services__text">
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+            заработаем, поднимая его на ваш этаж.
+          </p>
+        </div>
+        <!-- /.services__box -->
+
+        <div class="services__box services__box-guarantee none" id="services-box-guarantee">
+          <h3 class="services__title">Гарантия</h3>
+          <p class="services__text">
+            Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+            Товар, не дом, конечно же
+          </p>
+        </div>
+        <!-- /.services__box -->
+
+        <div class="services__box services__box-credit none" id="services-box-credit">
+          <h3 class="services__title">Кредит</h3>
+          <p class="services__text">
+            Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+            кредита. Выгодные для нашего банка, разумеется.
+          </p>
+        </div>
+        <!-- /.services__box -->
+      </div>
+      <!-- /.services__wrapper -->
+    </section>
+    <!--/services-->
+
+    <section class="partners-logo">
+      <ul class="partners-logo__list">
+        <li class="partners-logo__item">
+          <a class="partners-logo__link" href="#">
+            <img class="partners-logo__img" src="img/logo-dj.jpg" alt="Логотип партнера" />
+          </a>
+        </li>
+        <li class="partners-logo__item">
+          <a class="partners-logo__link" href="#">
+            <img class="partners-logo__img" src="img/logo-spGADGETS.jpg" alt="Логотип партнера" />
+          </a>
+        </li>
+        <li class="partners-logo__item">
+          <a class="partners-logo__link" href="#">
+            <img class="partners-logo__img" src="img/logo-GoPro.jpg" alt="Логотип партнера" />
+          </a>
+        </li>
+        <li class="partners-logo__item">
+          <a class="partners-logo__link" href="#">
+            <img class="partners-logo__img" src="img/logo-vive.jpg" alt="Логотип партнера" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!--/partners-logo-->
+
+    <div class="wrapper-flex">
+      <section class="info">
+        <h2 class="info__title">О нас</h2>
+        <p class="info__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="info__text">
+          Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+          компаниями:
+        </p>
+        <ul class="info__list-transport-companies">
+          <li class="info__item-transport-companies">Деловые Линии</li>
+          <li class="info__item-transport-companies">Автотрейдинг</li>
+          <li class="info__item-transport-companies">ЖелДорЭкспедиция</li>
+        </ul>
+        <button class="info__btn btn">Подробнее о нас</button>
+      </section>
+      <!---/info-->
+
+      <section class="contact">
+        <h2 class="contact__title">Контакты</h2>
+        <p class="contact__text">
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+          Всякое бывает.
+        </p>
+        <div class="contact__map_small" id="contact-map-small">
+          <iframe
+            class="contact__map_small-iframe"
+            src="https://yandex.ru/map-widget/v1/-/CCQpIXSRpB"
+            width="100%"
+            height="100%"
+            frameborder="1"
+            allowfullscreen="true"
+            style="position:relative;"
+          ></iframe>
+        </div>
+
+        <div class="contact__map_big none" id="contact-map-big">
+          <div class="contact__map_big-wrap">
+            <button class="contact__map_big-btn-close btn-close" id="map-btn-close"></button>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCQpIXSRpB" width="100%" height="100%"></iframe>
+          </div>
+        </div>
+
+        <button class="contact__btn btn" id="contact-btn-message">Напишите нам</button>
+
+        <div class="contact__window-message  window-message none" id="contact-window-message">
+          <div class="window-message__wrapper">
+            <div class="window-message__btn-wrap">
+              <button class="btn-close" id="window-message-btn-close"></button>
+            </div>
+            <form class="window-message__form" action="#">
+              <div class="window-message__wrap-flex">
+                <div class="window-message__box">
+                  <label class="window-message__label" for="">Ваше имя:</label>
+                  <input class="window-message__input" type="text" placeholder="Представьтесь пожалуста" />
+                </div>
+                <div class="window-message__box">
+                  <label class="window-message__label" for="">Ваш e-malil:</label>
+                  <input class="window-message__input" type="email" placeholder="Для отправки ответа" />
+                </div>
+              </div>
+              <!--/window-message__wrap-flex-->
+              <div class="window-message__box">
+                <label class="window-message__label" for="">Текст письма:</label>
+                <textarea class="window-message__textarea" name="" placeholder="В свободной форме"></textarea>
+              </div>
+              <button class="window-message__btn btn" type="submit">Отправить</button>
+            </form>
+          </div>
+          <!-- /.window-message__wrapper -->
+        </div>
+        <!--/contact__window-message-->
+      </section>
+      <!--/contact-->
+    </div>
+    <!-- /.wrapper -->
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__wrap">
+          <a class="footer__logo logo logo_yellow" href="index.html">device</a>
+          <ul class="footer__user-nav user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link_white" href="#">Войти</a>
+              <svg class="user-nav__icon user-nav__icon_yellow">
+                <use href="#icon-user"></use>
+              </svg>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link_white" href="#">Сравнить</a>
+              <svg class="user-nav__icon user-nav__icon_yellow">
+                <use href="#icon-compare"></use>
+              </svg>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link_white" href="#">Корзина</a>
+              <svg class="user-nav__icon user-nav__icon_yellow">
+                <use href="#icon-basket"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <!--/footer__wrap-->
+        <div class="footer__wrap">
+          <button class="footer__address">г. Москва, ул. Строителей, 15</button>
+          <div class="footer__site-nav site-nav">
+            <a class="site-nav__link site-nav__link_white" href="#">Доставка</a>
+            <a class="site-nav__link site-nav__link_white" href="#">Гарантия</a>
+            <a class="site-nav__link site-nav__link_white" href="#">Контакты</a>
+          </div>
+          <a class="footer__address" href="tel:+7(495)495-95-95">Тел: +7(495)495-95-95</a>
+        </div>
+        <!--/footer__wrap-->
+
+        <div class="footer__wrap">
+          <div class="footer__social social">
+            <a class="social__link" href="#">
+              <svg class="social__icon">
+                <use href="#icon-facebook"></use>
+              </svg>
+            </a>
+            <a class="social__link" href="#">
+              <svg class="social__icon">
+                <use href="#icon-instagram"></use>
+              </svg>
+            </a>
+            <a class="social__link" href="#">
+              <svg class="social__icon">
+                <use href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="copy">
+            <a class="copy__link" href="#"></a>
+          </div>
+        </div>
+        <!--/footer__wrap-->
+      </div>
+      <!--/footer__wrapper-->
+    </footer>
 
     <script src="js/bundle.js"></script>
   </body>
